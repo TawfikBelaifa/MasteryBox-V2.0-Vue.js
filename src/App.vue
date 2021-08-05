@@ -36,7 +36,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
 
-#app {
+body{
+  margin: 0;
+  padding: 0;
+
+  #app {
   width: 100vw;
   padding: 0;
   margin: 0;
@@ -88,5 +92,9 @@
     margin: 0;
   }
 }
+
+}
+
+
 
 </style>

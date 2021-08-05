@@ -55,7 +55,7 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "beforeFooter",
   props: {
     msg: String,
   },
