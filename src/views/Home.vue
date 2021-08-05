@@ -8,11 +8,13 @@
 <script>
 // @ is an alias to /src
 import beforeFooter from '@/components/beforeFooter.vue'
+import Footer from '@/components/Footer.vue'
+
 
 export default {
   name: 'Home',
   components: {
-    beforeFooter
+    beforeFooter, Footer
   }
 }
 </script>
