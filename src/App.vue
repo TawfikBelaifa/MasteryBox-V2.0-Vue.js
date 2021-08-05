@@ -29,72 +29,68 @@
 </template>
 
 <style lang="scss">
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Merienda&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Merienda&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Merienda&family=Tangerine&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Merienda&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Merienda&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Merienda&family=Tangerine&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
-
-body{
+body {
   margin: 0;
   padding: 0;
 
   #app {
-  width: 100vw;
-  padding: 0;
-  margin: 0;
-}
-
-.top {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px;
-  z-index: 1;
-  background-color: #000;
-
-  a {
-    text-decoration: none;
-  }
-
-  .mini-nmeSite h1 {
-    font-family: "Merienda", cursive;
-    font-size: 14px;
-    font-weight: 100;
-    color: bisque;
-    text-transform: uppercase;
-  }
-
-  .JiiH {
-    display: flex;
-    list-style: none;
     padding: 0;
-  }
-
-  .JiiH li {
-    padding: 10px 40px;
-    color: blanchedalmond;
-    text-transform: uppercase;
-    font-family: 'Julius Sans One', sans-serif;
-    margin: 0 5px;
-    transition: .5s;
-    cursor: pointer;
-  }
-
-  *, :after, :before {
-    box-sizing: border-box;
     margin: 0;
   }
+
+  .top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    z-index: 1;
+    background-color: #000;
+
+    a {
+      text-decoration: none;
+    }
+
+    .mini-nmeSite h1 {
+      font-family: "Merienda", cursive;
+      font-size: 14px;
+      font-weight: 100;
+      color: bisque;
+      text-transform: uppercase;
+    }
+
+    .JiiH {
+      display: flex;
+      list-style: none;
+      padding: 0;
+    }
+
+    .JiiH li {
+      padding: 10px 40px;
+      color: blanchedalmond;
+      text-transform: uppercase;
+      font-family: "Julius Sans One", sans-serif;
+      margin: 0 5px;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+
+    *,
+    :after,
+    :before {
+      box-sizing: border-box;
+      margin: 0;
+    }
+  }
 }
-
-}
-
-
-
 </style>
