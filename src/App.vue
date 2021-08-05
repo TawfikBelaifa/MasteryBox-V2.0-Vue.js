@@ -80,18 +80,11 @@
     transition: .5s;
     cursor: pointer;
   }
-}
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+  *, :after, :before {
+    box-sizing: border-box;
+    margin: 0;
   }
 }
+
 </style>
