@@ -46,12 +46,13 @@ export default {
 
 <style scoped>
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
 .footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 250px;
-    width: 100vw;
     background-color: #000;
     color: white;
     font-family: 'Poppins', sans-serif;
