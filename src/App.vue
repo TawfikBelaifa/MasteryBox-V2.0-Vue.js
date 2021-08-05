@@ -29,12 +29,14 @@
 </template>
 
 <style lang="scss">
+
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Merienda&family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+
 #app {
-  // font-family: Avenir, Helvetica, Arial, sans-serif;
-  // -webkit-font-smoothing: antialiased;
-  // -moz-osx-font-smoothing: grayscale;
-  // text-align: center;
-  // color: #2c3e50;
   width: 100vw;
   padding: 0;
   margin: 0;
