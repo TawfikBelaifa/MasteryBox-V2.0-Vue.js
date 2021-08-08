@@ -51,7 +51,7 @@ export default {
         rgba(0,0,0,.11) 8%, 
         rgba(0,0,0,.8) 95%, 
         rgba(0,0,0,.8)), 
-    url(../../static/Logo-home/3.jpg);
+    url(../../../static/Logo-home/3.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
