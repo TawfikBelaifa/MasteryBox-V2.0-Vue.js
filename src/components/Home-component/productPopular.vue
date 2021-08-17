@@ -43,9 +43,8 @@ export default {
     name: "productPopularVue",
     data: () => {
         return{
-            api : []
+            api : ['dcdf', 'edefv'],
         }
-       
     },
     computed:{
         dataUse(){

@@ -59,7 +59,7 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 10px;
-    z-index: 1;
+    z-index: 3;
     background-color: #000;
 
     a {

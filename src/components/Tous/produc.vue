@@ -31,8 +31,52 @@
                         </div>
                     </div>
                 </div>
-            </div>    
+            </div>  
+
+            <div class="slid_">
+            <div class="Lmpl">
+                <div class="kOpmk">
+                    <div class="left">
+                        0
+                    </div>
+                    <div class="lldok">
+                        <div class="vlr">
+                            <span>0</span>
+                        </div>
+                        <input type="range" min="0" max="200" step="10" class="range_slid" v-model="price_choice">
+                    </div>
+                    
+                    <div class="right">
+                        200
+                    </div>
+                </div>
+            </div>
+            <div class="MBHi">
+                <h1>Ventes Spécial</h1>
+                <div class="LLLki">
+                    Etiam viverra sit amet nulla pretium varius. 
+                    In pulvinar dolor leo, eget tempus ante accumsan vitae. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed sit amet imperdiet magna. 
+                    Maecenas nec nibh sit amet arcu accumsan aliquet quis vel nulla. 
+                    Integer quis odio convallis, molestie enim sed.
+                    Etiam viverra sit amet nulla pretium varius. 
+                    In pulvinar dolor leo, eget tempus ante accumsan vitae. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                   
+                </div>
+                <div class="LLLki" style="font-weight:bold;">
+                    Filtrer par prix
+                </div>
+
+                <div class="LLLki">
+                    Prix max 200£
+                </div>
+            </div>
+        </div>  
         </div>
+
+
     
 </template>
 
@@ -335,38 +379,10 @@ export default {
         grid-gap: 40px;
         
     }
-
-    .contain_Polk{
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-        width: auto;
-        margin-top: 100px;
-    }
-
-    .Lmpl{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 50px;
-        width: 300px;
-        background-color: #001d3d;
-        padding: 20px;
-        font-family:'Julius Sans One', sans-serif ;
-        position: relative;
-        border: 1px solid #000;
-        color:white;
-    }
+ 
   
 
-    .kOpmk{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-    }
+
   
 
   .range_slid{
@@ -448,7 +464,87 @@ export default {
     margin: 15px 0;
 }
 
+    .kOpmk{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+   .Lmpl{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 300px;
+        background-color: #001d3d;
+        padding: 20px;
+        font-family:'Julius Sans One', sans-serif ;
+        position: relative;
+        border: 1px solid #000;
+        color:white;
+    }
+
 .slid_{
     background-color: #234263;
 }
+
+  .range_slid{
+      -webkit-appearance: none;
+      height: 5px;
+      width: 100%;
+      background-color: #fff;
+  }
+
+  .vlr{
+      width: 200px;
+  }
+  .vlr span{
+    position: absolute;
+    top: -59px;
+    height: 50px;
+    width: 50px;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-50%);
+    color: #fff;
+    font-weight: bold;
+}
+
+.vlr span::after{
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    z-index: -1;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color: #234263;
+}
+
+.range_slid::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.lldok{
+    position: relative;
+}
+
+
+
 </style>
