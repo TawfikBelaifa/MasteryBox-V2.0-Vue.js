@@ -9,7 +9,7 @@
           <router-link to="/">
             <li>Accueil</li>
           </router-link>
-          <router-link to="/About">
+          <router-link to="/All">
             <li>Tous</li>
           </router-link>
           <router-link to="/Femmes">

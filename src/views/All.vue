@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="all">
     <produc />
   </div>
 </template>
@@ -8,7 +8,7 @@
 import produc from "@/components/Tous/produc.vue";
 
 export default {
-  name: "About",
+  name: "All",
   components: {
     produc
   },
