@@ -1,14 +1,10 @@
 <template>
   <div class="home">
-    <div class="conatin_accueil">
-      <div class="Khj">
-         <Pub_1 />
-      <productPopular />
-      <beforeFooter />
-      <Footer />
-      </div>
-     
-    </div>
+    <Information />
+    <Pub_1 />
+    <productPopular />
+    <beforeFooter />
+    <Footer />
   </div>
 </template>
 
@@ -18,6 +14,7 @@ import beforeFooter from "@/components/Home-component/beforeFooter.vue";
 import Footer from "@/components/Home-component/Footer.vue";
 import productPopular from "@/components/Home-component/productPopular.vue";
 import Pub_1 from "@/components/Home-component/Pub_1.vue";
+import Information from "@/components/Home-component/Information.vue";
 
 export default {
   name: "Home",
@@ -26,10 +23,10 @@ export default {
     Footer,
     productPopular,
     Pub_1,
+    Information,
   },
 };
 </script>
 
 <style>
-
 </style>
