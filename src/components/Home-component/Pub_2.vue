@@ -2,26 +2,31 @@
   <div class="center_2">
     <div class="top-ACC">
       <div class="img-HY">
-        <img src="../../../static/Produit/Men/haut/2.png" alt="New shoes" />
+        <img src="../../../static/Produit/Men/sneakers/2.png" alt="New shoes" />
       </div>
-      <div class="new">-30%</div>
-      <div class="sale">Ventes Partout</div>
-      <div class="collection">L'ete</div>
-      <div class="details">Sur tous les accéssoires</div>
+      <div class="new">New</div>
+      <div class="sale">Men Shoes</div>
+      <div class="collection">Collection</div>
+      <div class="details">It's an italian style</div>
     </div>
   </div>
 </template>
+
 <script>
 export default {
-  name: "Pub-1.vue",
+  name: "Pub_2",
 };
 </script>
+
 <style scoped>
+
 .center_2 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+
 .top-ACC {
   display: grid;
   grid-template-columns: 50px 100px 1fr;

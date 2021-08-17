@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <Pub_2 />
     <Information />
     <Pub_1 />
     <productPopular />
@@ -15,6 +16,8 @@ import Footer from "@/components/Home-component/Footer.vue";
 import productPopular from "@/components/Home-component/productPopular.vue";
 import Pub_1 from "@/components/Home-component/Pub_1.vue";
 import Information from "@/components/Home-component/Information.vue";
+import Pub_2 from "@/components/Home-component/Pub_2.vue";
+
 
 export default {
   name: "Home",
@@ -24,6 +27,7 @@ export default {
     productPopular,
     Pub_1,
     Information,
+    Pub_2
   },
 };
 </script>
