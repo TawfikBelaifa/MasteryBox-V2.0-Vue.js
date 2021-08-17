@@ -35,6 +35,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap");
 
+*,:after,:before {
+      box-sizing: border-box;
+      margin: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -85,12 +90,7 @@ body {
       cursor: pointer;
     }
 
-    *,
-    :after,
-    :before {
-      box-sizing: border-box;
-      margin: 0;
-    }
+
   }
 }
 </style>

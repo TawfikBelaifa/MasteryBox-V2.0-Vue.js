@@ -3,7 +3,7 @@
 
    
             <div class="Hujk prouduit-populaire">
-                <div class="container-3D" v-for="dataUses in dataUse">
+                <div class="container-3D" v-for="dataUses in dataUse" v-bind:key="dataUses.id">
                     <div class="JHgb">
                         <div class="front">
                             <div class="front-contain">
@@ -18,7 +18,7 @@
                         <div class="back">
                             <div class="back-contain">
                                 <div class="contain-start">
-                                    <span v-for="n in 5" class="" :class="{bgspan: n <= dataUses.starrating }"></span>
+                                    <span v-for="n in 5" class="" :class="{bgspan: n <= dataUses.starrating }" v-bind:key="n"></span>
                                 </div>
                                 <div class="Work">
                                     {{dataUses.description}}
@@ -53,9 +53,6 @@ export default {
             return this.$store.state.DataUs.filter((DataUs) => DataUs.aprendre == true)
         }
     }, 
-    mounted: {
-        
-    }
 }
 </script>
 
