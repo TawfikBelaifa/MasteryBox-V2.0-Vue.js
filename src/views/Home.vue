@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <entete />
     <Pub_2 />
     <Information />
     <Pub_1 />
@@ -17,6 +18,8 @@ import productPopular from "@/components/Home-component/productPopular.vue";
 import Pub_1 from "@/components/Home-component/Pub_1.vue";
 import Information from "@/components/Home-component/Information.vue";
 import Pub_2 from "@/components/Home-component/Pub_2.vue";
+import entete from "@/components/Home-component/entete.vue";
+
 
 
 export default {
@@ -27,7 +30,8 @@ export default {
     productPopular,
     Pub_1,
     Information,
-    Pub_2
+    Pub_2,
+    entete
   },
 };
 </script>
