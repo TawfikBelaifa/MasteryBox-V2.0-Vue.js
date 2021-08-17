@@ -85,13 +85,15 @@ export default {
     name:"produc",
     data: () => {
         return{
-            
+            price_choice:0
         }
        
     },
     computed:{
         Api(){
-            return this.$store.state.DataUs
+            $('.vlr span').html(this.price_choice)
+            $('.vlr span').css('left', ((this.price_choice / 2) ) + "%")
+            return this.$store.state.DataUs.filter((DataUs) => DataUs.price >= this.price_choice)
         }
     }, 
 }
