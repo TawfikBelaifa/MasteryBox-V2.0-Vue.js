@@ -1,16 +1,14 @@
 <template>
-    <div class="lIKOO">
-
-   
-            <div class="Hujk prouduit-populaire">
-                <div class="container-3D" v-for="dataUses in dataUse" v-bind:key="dataUses.id">
+        <div class="contain_Polk">
+            <div  class="ctn_Tous">
+                <div class="container-3D" v-for="Api in Api" v-bind:key="Api.id">
                     <div class="JHgb">
                         <div class="front">
                             <div class="front-contain">
                                 <div class="Hujk_1">
-                                    <div class="img_"><img :src="dataUses.img" alt=""></div>
-                                    <div class="name_">{{dataUses.name}}</div>
-                                    <div class="prix_">{{dataUses.price}}£</div>
+                                    <div class="img_"><img :src="Api.img" alt=""></div>
+                                    <div class="name_">{{Api.name}}</div>
+                                    <div class="prix_">{{Api.price}}£</div>
                                     
                                 </div>
                             </div>
@@ -18,13 +16,13 @@
                         <div class="back">
                             <div class="back-contain">
                                 <div class="contain-start">
-                                    <span v-for="n in 5" class="" :class="{bgspan: n <= dataUses.starrating }" v-bind:key="n"></span>
+                                    <span v-for="n in 5" class="" :class="{bgspan: n <= Api.starrating }" v-bind:key="n"></span>
                                 </div>
                                 <div class="Work">
-                                    {{dataUses.description}}
+                                    {{Api.description}}
                                 </div>
                                 <div class="contact">
-                                    autre couleur : {{dataUses.color}}
+                                    autre couleur : {{Api.color}}
                                 </div>
                                 <div class="localisation">
                                     <div class="Voir_arct"><button class="btn_vue_artc">Voir article</button></div>
@@ -33,23 +31,23 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-    </div>
+            </div>    
+        </div>
+    
 </template>
 
 <script>
 export default {
-    name: "productPopularVue",
+    name:"produc",
     data: () => {
         return{
-            api : []
+            
         }
        
     },
     computed:{
-        dataUse(){
-            return this.$store.state.DataUs.filter((DataUs) => DataUs.aprendre == true)
+        Api(){
+            return this.$store.state.DataUs
         }
     }, 
 }
@@ -331,4 +329,126 @@ export default {
     text-justify: distribute;
 }
 
+    .ctn_Tous{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+        
+    }
+
+    .contain_Polk{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: auto;
+        margin-top: 100px;
+    }
+
+    .Lmpl{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 300px;
+        background-color: #001d3d;
+        padding: 20px;
+        font-family:'Julius Sans One', sans-serif ;
+        position: relative;
+        border: 1px solid #000;
+        color:white;
+    }
+  
+
+    .kOpmk{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+  
+
+  .range_slid{
+      -webkit-appearance: none;
+      height: 5px;
+      width: 100%;
+      background-color: #fff;
+  }
+
+  .vlr{
+      width: 200px;
+  }
+  .vlr span{
+    position: absolute;
+    top: -59px;
+    height: 50px;
+    width: 50px;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-50%);
+    color: #fff;
+    font-weight: bold;
+}
+
+.vlr span::after{
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    z-index: -1;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color: #234263;
+}
+
+.range_slid::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.lldok{
+    position: relative;
+}
+
+.MBHi{
+    height: 535px;
+    width: 300px;
+    background: #001d3d;
+    padding: 20px;
+    clip-path: polygon(0 14%, 100% 0, 100% 84%, 0% 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.MBHi h1{
+    color: blanchedalmond;
+    text-transform: uppercase;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.MBHi .LLLki{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 13px;
+    margin: 15px 0;
+}
+
+.slid_{
+    background-color: #234263;
+}
 </style>

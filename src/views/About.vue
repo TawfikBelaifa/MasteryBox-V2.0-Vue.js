@@ -1,5 +1,16 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <produc />
   </div>
 </template>
+
+<script>
+import produc from "@/components/Tous/produc.vue";
+
+export default {
+  name: "About",
+  components: {
+    produc
+  },
+}
+</script>
